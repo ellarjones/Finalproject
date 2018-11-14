@@ -12,7 +12,7 @@ body{
 
 	
 	width: 100%;
-	height: 40em;
+	height: 35em;
 	margin: 0;
 
 	border: 1px solid black;
@@ -37,13 +37,14 @@ ul {
     background-color: #333;
     
     width: 100%;
-
+    height: 4em;
     
 	
 }
 
 li {
     float: left;
+   
 }
 
 li a {
@@ -54,19 +55,31 @@ li a {
     text-decoration: none;
     font-size: 22px;
     font-family: Roboto, Helvetica;
-    margin:0;
+    margin: 0;
 }
 
 li a:hover {
     background-color: #9FCC9E;
     color: black;
+    
 }
 
 .flagg{
     width:28px;
-    height:auto;
     margin-right: 20px;
     padding-left: 1em;
+    height: auto;
+}
+
+#logo{
+	
+	float: right;
+	margin-top: 5em;
+	width: 20%;
+	position: sticky;
+
+	top: 6em;
+
 }
 
 .text-box{
@@ -88,5 +101,6 @@ li a:hover {
 .overskrift{
 	color: #1B3409;
 	border-bottom: 2px solid #1B3409;
+
 
 }

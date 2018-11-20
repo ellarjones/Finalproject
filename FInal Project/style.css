@@ -5,9 +5,6 @@ body{
 	font-family: sans-serif;
 	
 }
-body #contact{
-	text-align: center;
-}
 /* Overskrift*/
 .header{
 	background-image: url("header.jpg");
@@ -143,52 +140,4 @@ li.nedtrekk {
 .overskrift{
 	color: #1B3409;
 	border-bottom: 2px solid #1B3409;
-}
-
-.contact{
-	text-align: center;
-}
-.contact-title{
-	margin-top: 4em;
-	text-transform: uppercase; 
-	color: #0A3409;
-
-}
-
-.control{	
-	width: 40%;
-	background: transparent;
-	border: none;
-	outline: none;
-	border-bottom: 1px solid #1B3409;
-
-	font-size: 18px;
-	margin-bottom: 2em;
-	transition: all 1s ease-in-out;
-}
-
-form{
-	margin-top: 4em;
-}
-input{
-	height: 4em;
-}
-form .submit{
-	background: #0A3409;
-	color: white;
-	text-transform: uppercase;
-	font-size: 20px;
-	font-weight: bold;
-	letter-spacing: 2px;
-	height: 4em;
-	margin-top: 0;
-
-	border-bottom: none;
-	border-radius: 1em;
-}
-
-form .submit:hover{
-	background-color: #92C591;
-	cursor: pointer;
-
 }

@@ -3,6 +3,7 @@ body{
 	padding: 0;
 	background-color: #EBF7E3;
 	font-family: sans-serif;
+
 	
 }
 body #contact{
@@ -113,27 +114,25 @@ li.nedtrekk {
     text-align: center;
 }
 
-#logo{
-	
-	float: right;
-	margin-top: 5em;
-	width: 20%;
-	position: sticky;
 
-	top: 6em;
 
+#logo-pic{
+	width: 70%;
 }
 
+.content{
+	max-width: 50%;
+	margin: auto;
+}
 .text-box{
 	margin-top: 2em;
-	margin-left: 2em;
 
 	border-radius: 1em;
 	border: 1px solid #1B3409;
 	padding: 1%;
 
 	height: 20em;
-	width: 60%;
+	margin-bottom: 2em;
 
 }
 

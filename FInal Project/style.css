@@ -131,8 +131,11 @@ li.nedtrekk {
 	border: 1px solid #1B3409;
 	padding: 1%;
 
-	height: 20em;
+	height: fixed;
 	margin-bottom: 2em;
+	line-height: 2;
+	color: #1B3409;
+
 
 }
 

@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background-color: #EBF7E3;
+	background-color: #FFFAE1;
 	font-family: sans-serif;
 
 	
@@ -23,7 +23,7 @@ body #contact{
 	border: 1px solid black;
 
 	text-align: center;
-	color: white;
+	color: #FFFAE1;
 
 }
 #header-text{
@@ -39,12 +39,16 @@ nav ul {
 
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding:0;
     overflow: hidden;
-    background-color: #0A3409;	
+    background-color: #5A5F37;	
     width: 100%;
-    height: 60px;
-    
+    height: 6em;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 	
 }
 
@@ -53,55 +57,65 @@ nav li {
    
 }
 
+
 nav li a, .nedtrekkbtn {
     display: inline-block;
-    color: white;
+    color: #FFFAE1;
     text-align: center;
-    padding: 16px 18px;
+    padding: 1.5em 2em 1.5em 2em;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.5em;
+    border-right: 1px solid #FFFAE1;
+
 }
 
-nav li a:hover, .nedtrekk:hover, .litenLogo:hover {
-    background-color: #EBF7E3;
-    color: black;
-    height: 60px;
-    
+nav li a .litenLogo{
+	padding: 0;
+}
+
+nav li a:hover, .nedtrekk:hover{
+    background-color: #919636;
+    color: #FFFAE1;
+    font-weight: bold;
+    height: 6em;
 }
 
 li.nedtrekk {
     display: inline-block;
 }
 .nedtrekk-innhold {
-	margin-top: -2em;
+	margin-top: 0;
     display: none;
     position: absolute;
-    background-color: #EBF7E3;
+    background-color: #FFFAE1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 .nedtrekk-innhold a {
-    color: black;
-    padding: 12px 16px;
+    color: #5A5F37;
+    padding: 5%;
     text-decoration: none;
     display: block;
     text-align: left;
+    border-bottom: 1px solid #5A5F37;
+
 }
 .nedtrekk-innhold a:hover {
-	background-color: #92C591;
+	background-color: #919636;
 }
 
 .nedtrekk:hover .nedtrekk-innhold {
     display: block;
 }
 .litenLogo{
-	height: 55px;
-	width: auto;
+	
+	width: 30%;
 	margin:0;
-	padding: 0px 18px;
+	padding: 0;
 	text-align: center;
 	float:left;
+
 }
 
 
@@ -128,14 +142,15 @@ li.nedtrekk {
 	margin-top: 2em;
 
 	border-radius: 1em;
-	border: 1px solid #1B3409;
-	padding: 1%;
+	border: 1px solid #5A5F37;
+	padding: 5%;
 
 	height: fixed;
 	margin-bottom: 2em;
 	line-height: 2;
 	color: #1B3409;
 
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
 }
 
@@ -143,8 +158,8 @@ li.nedtrekk {
 	
 }
 .overskrift{
-	color: #1B3409;
-	border-bottom: 2px solid #1B3409;
+	color: #524A3A;
+	border-bottom: 2px solid #5A5F37;
 }
 
 .contact{
@@ -153,7 +168,7 @@ li.nedtrekk {
 .contact-title{
 	margin-top: 4em;
 	text-transform: uppercase; 
-	color: #0A3409;
+	color: #524A3A;
 
 }
 
@@ -162,7 +177,7 @@ li.nedtrekk {
 	background: transparent;
 	border: none;
 	outline: none;
-	border-bottom: 1px solid #1B3409;
+	border-bottom: 1px solid #524A3A;
 
 	font-size: 18px;
 	margin-bottom: 2em;
@@ -176,8 +191,8 @@ input{
 	height: 4em;
 }
 form .submit{
-	background: #0A3409;
-	color: white;
+	background: #5A5F37;
+	color: #FFFAE1;
 	text-transform: uppercase;
 	font-size: 20px;
 	font-weight: bold;
@@ -190,7 +205,7 @@ form .submit{
 }
 
 form .submit:hover{
-	background-color: #92C591;
+	background-color: #919636;
 	cursor: pointer;
 
 }

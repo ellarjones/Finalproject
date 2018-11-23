@@ -24,8 +24,13 @@ body #contact{
 	color: #FFFAE1;
 
 }
+.sykkel{
+	height: 100px;
+	text-align: center;
+	width: auto;
+}
 #header-text{
-	font-size: 8em;
+	font-size: 5.5em;
 }
 
 /* Navigeringsmeny */

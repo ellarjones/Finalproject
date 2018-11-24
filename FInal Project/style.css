@@ -261,3 +261,14 @@ form .submit:hover{
 	width: 45%;
 	float: right;
 }
+
+.top{
+	bottom: 10px;
+  	color: #524A3A;
+  	font-size: 1.2em;
+  	font-weight: bold;
+  	text-decoration: none;
+  	text-align: center;
+}
+
+ 

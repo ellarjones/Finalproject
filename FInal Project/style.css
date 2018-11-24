@@ -31,12 +31,14 @@ body #contact{
 }
 #header-text{
 	font-size: 5.5em;
+	text-shadow: -1px 0 #524A3A, 0 1px #524A3A, 1px 0 #524A3A, 0 -1px #524A3A;
 }
 
 /* Navigeringsmeny */
 nav{
 	position:sticky;
 	top: 0;
+	box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
 }
 nav ul {
 
@@ -143,7 +145,7 @@ li.nedtrekk {
 }
 
 .content{
-	max-width: 50%;
+	max-width: 70%;
 	margin: auto;
 }
 .text-box{
@@ -151,14 +153,14 @@ li.nedtrekk {
 
 	border-radius: 1em;
 	border: 1px solid #5A5F37;
-	padding: 5%;
+	padding: 0 8% 8% 8%;
 
-	height: fixed;
+	overflow: hidden;
 	margin-bottom: 2em;
 	line-height: 2;
 	color: #1B3409;
 
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
 
 }
 
@@ -166,6 +168,31 @@ li.nedtrekk {
 .overskrift{
 	color: #524A3A;
 	border-bottom: 2px solid #5A5F37;
+	width: 45%;
+	margin-top: 8%;
+}
+
+#soppel {
+	float: right;
+	border-radius: 5%;
+	width: 50%;
+	box-shadow: 2px 8px 10px 2px rgba(0,0,0,0.2);
+	
+}
+.pic {
+	margin-bottom: 30%;
+	border-radius: 5%;
+	width: 100%;
+	box-shadow: 2px 8px 10px 2px rgba(0,0,0,0.2);
+}
+
+.text-with-photo{
+	padding-right: 55%;
+}
+
+p{
+    line-height: 2.0;
+    font-size: 1.2em;
 }
 
 .contact{
@@ -214,4 +241,23 @@ form .submit:hover{
 	background-color: #919636;
 	cursor: pointer;
 
+}
+
+#tablet{
+	float: right;
+	border-radius: 5%;
+	width: 50%;
+	box-shadow: 2px 8px 10px 2px rgba(0,0,0,0.2);
+	margin-top: 5%;
+}
+
+
+.text{
+	width: 50%;
+	float: left;
+}
+
+.bilde-boks{
+	width: 45%;
+	float: right;
 }

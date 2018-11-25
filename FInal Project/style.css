@@ -14,6 +14,7 @@ body #contact{
 	background-image: url("header.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	max-width: 100%;
 
 	width: 100%;
 	height: 34em;
@@ -116,6 +117,30 @@ li.nedtrekk {
 .nedtrekk:hover .nedtrekk-innhold {
     display: block;
 }
+
+/* små skjermer: navigasjonsmeny */
+@media only screen and (max-width: 1200px) and(min-width: 1050px) {
+	nav li a {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	
+}
+@media only screen and (max-width: 1050px) {
+	nav li a{
+		border-right: 0;
+	}
+}
+
+@media only screen and (max-width: 200px) {
+	
+}
+
+
+
+
+
 .litenLogo{
 	
 	height: 64px;
@@ -145,7 +170,7 @@ li.nedtrekk {
 }
 
 .content{
-	max-width: 70%;
+	max-width: 80%;
 	margin: auto;
 }
 .text-box{

@@ -30,8 +30,17 @@ body #contact{
 	text-align: center;
 	width: auto;
 }
+#header-over{
+	font-size: 3.5em;
+	font-family: Bell MT;
+	padding:0;
+	margin-bottom: 0;
+}
 #header-text{
-	font-size: 5.5em;
+	font-family: Bell MT;
+	font-size: 6em;
+	padding:0;
+	margin-top: 0;
 	text-shadow: -1px 0 #524A3A, 0 1px #524A3A, 1px 0 #524A3A, 0 -1px #524A3A;
 }
 
@@ -117,10 +126,13 @@ li.nedtrekk {
 .nedtrekk:hover .nedtrekk-innhold {
     display: block;
 }
+nav i{
+	display: block;
+}
 
 /* små skjermer: navigasjonsmeny */
-@media only screen and (max-width: 1200px) and(min-width: 1050px) {
-	nav li a {
+@media only screen and (max-width: 1200px) {
+	nav li a, .nedtrekkbtn {
 		padding-left: 1em;
 		padding-right: 1em;
 	}
@@ -128,12 +140,41 @@ li.nedtrekk {
 	
 }
 @media only screen and (max-width: 1050px) {
-	nav li a{
+	nav li a, .nedtrekkbtn{
 		border-right: 0;
+		padding-left: 0.75em;
+		padding-right: 0.75em;
 	}
 }
 
-@media only screen and (max-width: 200px) {
+@media only screen and (max-width: 970px) {
+	nav li a, .nedtrekkbtn{
+		border-right: 0;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+	
+}
+@media only screen and (max-width: 840px) {
+	nav li a, .nedtrekkbtn{
+		border-right: 0;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+	.litenLogo{
+		display: none;
+	}
+	
+}
+@media only screen and (max-width: 780px) {
+	nav i{
+		font-size: 0;
+	}
+	nav li a, .nedtrekkbtn{
+		border-right: 0;
+		padding-left: 0.4em;
+		padding-right: 0.4em;
+	}
 	
 }
 

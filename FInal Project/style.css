@@ -3,8 +3,7 @@ body{
 	padding: 0;
 	background-color: #FFFAE1;
 	font-family: sans-serif;
-
-	
+	position: relative;
 }
 body #contact{
 	text-align: center;
@@ -46,6 +45,7 @@ body #contact{
 
 /* Navigeringsmeny */
 nav{
+	position: -webkit-sticky;
 	position:sticky;
 	z-index: 0;
 	top: 0;
@@ -57,7 +57,6 @@ nav ul {
     margin: 0;
     padding:0;
     margin-right: 0;
-    overflow: hidden;
     background-color: #5A5F37;	
     width: 100%;
     height: 4.5em;
@@ -66,7 +65,7 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-	
+	overflow: hidden;
 }
 
 nav li {
@@ -80,7 +79,7 @@ nav li a, .nedtrekkbtn {
     display: inline-block;
     color: #FFFAE1;
     text-align: center;
-    padding: 1.5em 2em;
+    padding: 0.95em 2em;
     text-decoration: none;
     font-size: 1.5em;
     border-right: 1px solid #FFFAE1;
@@ -101,7 +100,7 @@ li.nedtrekk {
     display: inline-block;
 }
 .nedtrekk-innhold {
-	margin-top: 0;
+	margin-top: 0px;  
 	padding: 0;
     display: none;
     position: absolute;
@@ -109,7 +108,6 @@ li.nedtrekk {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    overflow: hidden;
 }
 .nedtrekk-innhold a {
     color: #5A5F37;
@@ -127,9 +125,6 @@ li.nedtrekk {
 .nedtrekk:hover .nedtrekk-innhold {
     display: block;
 }
-nav i{
-	display: block;
-}
 .content{
 	max-width: 80%;
 	margin: auto;
@@ -140,7 +135,7 @@ nav i{
 	
 	height: 64px;
 	width: auto;
-	margin:0;
+	padding: 0;
 	text-align: center;
 	float:left;
 	
@@ -152,9 +147,7 @@ nav i{
     width:28px;
     height: auto;
     text-align: center;
-    display: inline-block;
     color: #FFFAE1;
-    padding: 1.5em 2em 1.5em 2em;
     float: right;
 }
 
@@ -339,4 +332,46 @@ nav p, nav i {
 		padding-right: 0.4em;
 	}
 	
+}
+footer {
+	height: 3em;
+	opacity: 0%;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding-right: 1em;
+}
+
+footer a {
+	padding: 7px 14px;
+	float: right;
+	border: 1px solid #524A3A;
+	border-radius: 20%;
+	box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.2);;
+	margin: 0 0.5em;
+	
+}
+
+footer a#instagram{
+	color: white;
+	background-color: #cd486b;
+}
+
+footer a#facebook{
+	color: white;
+	background-color: #3B5998;
+}
+footer a#instagram:hover{
+	background-color: white;
+	color: #cd486b;
+}
+footer a#facebook:hover{
+	background-color: white;
+	color: #3B5998;
+}
+
+@media only screen and (max-width: 1100px) {
+	footer {
+		position: relative; 
+	}
 }

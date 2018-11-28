@@ -8,6 +8,12 @@ body{
 body #contact{
 	text-align: center;
 }
+i, b {
+	color: inherit;
+}
+nav p, nav i {
+	color: inherit;
+}
 /* Overskrift*/
 .header{
 	background-image: url("header.jpg");
@@ -85,6 +91,9 @@ nav li a, .nedtrekkbtn {
     border-right: 1px solid #FFFAE1;
 
 }
+#flagglinje{
+	border-right: 0;
+}
 
 nav li a .litenLogo{
 	padding: 0;
@@ -105,7 +114,7 @@ li.nedtrekk {
     display: none;
     position: absolute;
     background-color: #FFFAE1;
-    min-width: 160px;
+    min-width: 205px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -177,7 +186,7 @@ li.nedtrekk {
 .overskrift{
 	color: #524A3A;
 	border-bottom: 2px solid #5A5F37;
-	width: 45%;
+	width: 50%;
 	margin-top: 8%;
 }
 
@@ -196,7 +205,7 @@ li.nedtrekk {
 }
 
 .text-with-photo{
-	padding-right: 55%;
+	padding-right: 50%;
 }
 
 p{
@@ -262,13 +271,14 @@ form .submit:hover{
 
 
 .text{
-	width: 50%;
-	float: left;
+	width: 55%;
+	float: 0;
 }
 
 .bilde-boks{
-	width: 45%;
+	width: 40%;
 	float: right;
+	margin-top: -40%;
 }
 
 .top{
@@ -279,60 +289,13 @@ form .submit:hover{
   	text-decoration: none;
   	text-align: center;
 }
-nav p, nav i {
-	color: inherit;
+#ikon-fjern{
+	font-size: auto;
+}
+nav i{
+	color:inherit;
 }
 
-/* små skjermer: navigasjonsmeny */
-@media only screen and (max-width: 1200px) {
-	nav li a, .nedtrekkbtn {
-		padding-left: 1em;
-		padding-right: 1em;
-	}
-
-	
-}
-@media only screen and (max-width: 1050px) {
-	nav li a, .nedtrekkbtn{
-		border-right: 0;
-		padding-left: 0.75em;
-		padding-right: 0.75em;
-	}
-}
-
-@media only screen and (max-width: 970px) {
-	nav li a, .nedtrekkbtn{
-		border-right: 0;
-		padding-left: 0.5em;
-		padding-right: 0.5em;
-	}
-	
-}
-@media only screen and (max-width: 840px) {
-	nav li a, .nedtrekkbtn{
-		border-right: 0;
-		padding-left: 0.5em;
-		padding-right: 0.5em;
-	}
-	.litenLogo{
-		display: none;
-	}
-	.content{
-		max-width: 98%;
-	}
-	
-}
-@media only screen and (max-width: 780px) {
-	nav ul li a i{
-		font-size: 0;
-	}
-	nav li a, .nedtrekkbtn{
-		border-right: 0;
-		padding-left: 0.4em;
-		padding-right: 0.4em;
-	}
-	
-}
 footer {
 	height: 3em;
 	opacity: 0%;
@@ -374,4 +337,71 @@ footer a#facebook:hover{
 	footer {
 		position: relative; 
 	}
+}
+
+/* små skjermer: navigasjonsmeny */
+@media only screen and (max-width: 1200px) {
+	nav li a, .nedtrekkbtn{
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	
+}
+@media only screen and (max-width: 1050px) {
+	nav li a, .nedtrekkbtn{
+		border-right: 0;
+		padding-left: 0.75em;
+		padding-right: 0.75em;
+	}
+}
+
+@media only screen and (max-width: 970px) {
+	nav li a, .nedtrekkbtn{
+		border-right: 0;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+	.text{
+		width:90%;
+	}
+	.bilde-boks{
+		float:left;
+		margin-top: 0;
+	}
+	.text-with-photo{
+		padding-right: 0;
+	}
+	.overskrift{
+
+
+	}
+}
+@media only screen and (max-width: 840px) {
+	nav li a, .nedtrekkbtn{
+		border-right: 0;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+	.litenLogo{
+		display: none;
+	}
+	.content{
+		max-width: 98%;
+	}
+	
+}
+@media only screen and (max-width: 780px) {
+	
+	nav li a, .nedtrekkbtn{
+		border-right: 0;
+		padding-left: 0.4em;
+		padding-right: 0.4em;
+	}
+	
+}
+@media only screen and (max-width: 400px){
+	nav ul li a{
+	}
+	
 }

@@ -30,11 +30,7 @@ nav p, nav i {
 	color: #FFFAE1;
 
 }
-.sykkel{
-	height: 100px;
-	text-align: center;
-	width: auto;
-}
+
 #header-over{
 	font-size: 3.5em;
 	font-family: Bell MT;
@@ -50,6 +46,24 @@ nav p, nav i {
 }
 
 /* Navigeringsmeny */
+.house{
+    margin-right: 0.2em;
+}
+
+@media only screen and (min-width: 970px){
+	.down{
+	    float: left;
+	    margin-right: 0.2em;
+    }
+    .ikon{
+    	margin-right: 0.2em;
+    }
+    
+    .menu{
+	    float: right;
+    }
+
+}
 nav{
 	position: -webkit-sticky;
 	position:sticky;

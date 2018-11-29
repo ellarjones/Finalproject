@@ -185,7 +185,7 @@ li.nedtrekk {
 
 	border-radius: 1em;
 	border: 1px solid #5A5F37;
-	padding: 0 8% 8% 8%;
+	padding: 0 5% 5% 5%;
 
 	overflow: hidden;
 	margin-bottom: 2em;
@@ -206,35 +206,63 @@ li.nedtrekk {
 .pic {
 	border-radius: 5%;
 	box-shadow: 2px 8px 10px 2px rgba(0,0,0,0.2);
+	
 }
+
 .facts{
 	font-size: 1.2em;
 	font-style: italic;
 	font-weight: bold;
 	color: #5A5F37;
 }
+
+.tablet{
+	border-radius: 5%;
+	box-shadow: 2px 8px 10px 2px rgba(0,0,0,0.2);
+}
+
 @media only screen and (min-width: 970px){
-    .text-with-photo{
-	    padding-right: 50%;
-    }
-    .pic{
-    	width: 45%;
-    	margin-bottom: 1em;
+    .content-right{
+    	width: 50%;
     	float: right;
+    }
+
+	.content-left{
+		float: left;
+		width: 45%;
+	}   
+
+    .pic{
+    	width: 100%;
+    	height: 50%;
+    	margin-bottom: 5em;
+    
     }
     .overskrift{
     	text-decoration: underline;
     }
+    .tablet{
+    	width: 50%;
+    	float: right;
+    }
 }
 @media only screen and (max-width: 970px){
+	.content-right{
+		display: none;
+	}
 	.text-with-photo{
 		padding: 0;
 	}
 	.pic{
 		width: 100%;
+		height: 50%;
+
 	}
 	.overskrift{
 		border-bottom: 2px solid #5A5F37;
+	}
+	.tablet{
+		display: none;
 	}
 }
 
@@ -435,4 +463,25 @@ footer a#facebook:hover{
 	nav ul li a{
 	}
 	
+}
+button{
+	background: #5A5F37;
+	color: #FFFAE1;
+	text-transform: uppercase;
+	font-size: 20px;
+	
+	letter-spacing: 2px;
+	height: 3em;
+	margin-top: 0;
+	width: 10em;
+
+	border-bottom: none;
+	border-radius: 0.5em;
+	box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);		
+}
+
+button:hover{
+	background-color: #919636;
+	cursor: pointer;
+	font-weight: bold;
 }

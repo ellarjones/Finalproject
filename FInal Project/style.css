@@ -5,6 +5,7 @@ body{
 	font-family: sans-serif;
 	position: relative;
 }
+
 body #contact{
 	text-align: center;
 }
@@ -36,13 +37,14 @@ nav p, nav i {
 	font-family: Bell MT;
 	padding:0;
 	margin-bottom: 0;
+	text-shadow: 1px 1px 2px #524A3A, 1px -1px 2px #524A3A, -1px 1px 2px #524A3A, -1px -1px 2px #524A3A;
 }
 #header-text{
 	font-family: Bell MT;
 	font-size: 6em;
 	padding:0;
 	margin-top: 0;
-	text-shadow: -1px 0 #524A3A, 0 1px #524A3A, 1px 0 #524A3A, 0 -1px #524A3A;
+	text-shadow: 1px 1px 2px #524A3A, 1px -1px 2px #524A3A, -1px 1px 2px #524A3A, -1px -1px 2px #524A3A;
 }
 
 /* Navigeringsmeny */
@@ -62,6 +64,9 @@ nav p, nav i {
     .menu{
 	    float: right;
     }
+    body{
+    	background-image: url("background.png");
+    }
 
 }
 
@@ -70,7 +75,7 @@ nav{
 	position:sticky;
 	z-index: 0;
 	top: 0;
-	box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.2);
 }
 nav ul {
 
@@ -80,7 +85,7 @@ nav ul {
     margin-right: 0;
     background-color: #5A5F37;	
     width: 100%;
-    height: 4.5em;
+    height: 10%;
 
     display: block;
 
@@ -109,6 +114,7 @@ nav li a, .nedtrekkbtn {
     border-right: 1px solid #FFFAE1;
 
 }
+
 #flagglinje{
 	border-right: 0;
 }
@@ -183,17 +189,13 @@ li.nedtrekk {
 
 .text-box{
 	margin-top: 2em;
-
-	border-radius: 1em;
-	border: 1px solid #5A5F37;
 	padding: 0 5% 5% 5%;
 
 	overflow: hidden;
 	margin-bottom: 2em;
 	line-height: 2;
 	color: #524A3A;
-
-	box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+	background-color: #FFFAE1;
 
 }
 
@@ -245,6 +247,11 @@ li.nedtrekk {
     	width: 50%;
     	float: right;
     }
+    .text-box{
+    	border-radius: 1em;
+	    border: 1px solid #5A5F37;
+	    box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+    }
 }
 @media only screen and (max-width: 970px){
 	.content-right{
@@ -264,6 +271,20 @@ li.nedtrekk {
 	.tablet{
 		display: none;
 	}
+	.menu{
+		display:none;
+	}
+	nav li a{
+		width: 2.35em;
+	}
+	nav ul{
+		height: 3em;
+	}
+	
+	.logo{
+		display: none;
+	}
+	
 }
 
 
